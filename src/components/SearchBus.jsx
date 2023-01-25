@@ -5,6 +5,7 @@ const SearchBus = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
+        
     }
 
   return (
