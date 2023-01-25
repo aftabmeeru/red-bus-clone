@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+    padding: 1rem 5rem;
+
+    > .logo {
+        color: white;
+        font-size: 2.5rem;
+        cursor: pointer;
+        width: 20rem;
+        text-align: center;
+    }
+
+    > .list > ul {
+        display: flex;
+        justify-content: center;
+        width: 40rem;
+        gap: 5rem;
+
+        > li {
+            list-style-type: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

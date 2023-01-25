@@ -1,0 +1,42 @@
+.form-container {
+    height: 30rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .form {
+        padding: 5rem;
+        background-color: gainsboro;
+
+        > input {
+            font-size: 1.3rem;
+            padding: 1rem 3rem;
+            margin: 0 3rem;
+            outline: none;
+        }
+
+        > span {
+            display: inline-block;
+            padding: .5rem .8rem;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+
+            > svg {
+                padding-top: .4rem;
+            }
+        }
+
+        > button {
+            font-size: 1.3rem;
+            padding: 1rem 3rem;
+            background-color: red;
+            color: white;
+            border: 2px solid red;
+            cursor: pointer;
+        }
+    }
+}
