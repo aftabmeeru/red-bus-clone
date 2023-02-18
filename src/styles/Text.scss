@@ -1,10 +1,22 @@
 .text-container {
-    height: 30rem;
-    background-color: red;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+    min-height: 35rem;
+    width: 100%;
+    gap: 3rem;
 
     > h1 {
         font-size: 5rem;
+        word-spacing: 1rem;
+        width: 50%;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    > .text-img {
+        width: 20%;
     }
 }

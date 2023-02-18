@@ -1,0 +1,33 @@
+.ticket-container {
+    background-color: red;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .ticket-details {
+        background-color: white;
+        width: 70%;
+        padding: 3rem;
+        text-align: center;
+
+        .details {
+            font-size: 2rem;
+            text-transform: capitalize;
+            padding: 1rem;
+        }
+    }
+
+    > button {
+        background-color: green;
+        color: white;
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        border: 1px solid green;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}

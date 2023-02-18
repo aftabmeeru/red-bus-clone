@@ -1,6 +1,5 @@
 .form-container {
-    height: 30rem;
-    border: 2px solid black;
+    height: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,17 +25,22 @@
             cursor: pointer;
 
             > svg {
-                padding-top: .4rem;
+                margin-bottom: 3px;
+                vertical-align: middle;
             }
         }
 
         > button {
             font-size: 1.3rem;
-            padding: 1rem 3rem;
+            padding: 1rem 0;
             background-color: red;
-            color: white;
             border: 2px solid red;
             cursor: pointer;
+
+            > a {
+                padding: 1rem 3rem;
+                color: white;
+            }
         }
     }
 }

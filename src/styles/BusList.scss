@@ -1,0 +1,71 @@
+@mixin commonCode() {
+    > h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    > p {
+        font-size: 1.7rem;
+        color: white;
+        background-color: red;
+        padding: .5rem 1.5rem;
+        font-weight: bold;
+    }
+
+    > h2 {
+        font-size: 2.3rem;
+        text-transform: capitalize;
+    }
+
+    > .departure, .arrival {
+         > h2 {
+            font-size: 2.3rem;
+        }
+        > p {
+            font-size: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            margin-top: -1rem;
+        }
+    }
+
+    > .rating {
+        background-color: rgb(15, 189, 15);
+        padding: .5rem 1.5rem;
+    }
+}
+
+@mixin listHeadCode($padding) {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bus-list-container {
+    background-color: red;
+    padding: 1.5rem 5rem;
+    width: 100%;
+
+    .bus-list-main {
+        background-color: red;
+        padding: 1.5rem 5rem;
+    
+        > .bus-list-head {
+            @include listHeadCode(2rem 5rem);
+    
+            @include commonCode();
+        }
+
+        > .bus-head {
+            @include listHeadCode(2rem 5rem);
+
+            @include commonCode();
+        }
+    }
+}
