@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/red-bus-clone/static/css/main.42356650.css",
+    "main.js": "/red-bus-clone/static/js/main.b97ff5d4.js",
+    "index.html": "/red-bus-clone/index.html",
+    "main.42356650.css.map": "/red-bus-clone/static/css/main.42356650.css.map",
+    "main.b97ff5d4.js.map": "/red-bus-clone/static/js/main.b97ff5d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42356650.css",
+    "static/js/main.b97ff5d4.js"
+  ]
+}
