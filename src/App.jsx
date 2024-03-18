@@ -15,6 +15,7 @@ import './styles/Text.scss';
 import './styles/BusList.scss';
 import './styles/BookBus.scss';
 import './styles/Booked.scss';
+import './styles/MediaQuery.scss';
 
 function App() {
 
@@ -52,6 +53,8 @@ function App() {
 
   useEffect(() => {
     fetchApi()
+    console.log(data)
+    console.log(data2)
   }, []);
 
 

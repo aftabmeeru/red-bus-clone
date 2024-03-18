@@ -10,25 +10,45 @@
     > .bus-seats {
         width: 65%;
         padding: 2rem;
-        background-color: gainsboro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
 
-        > .seats {
-            margin-bottom: 1rem;
+        > .double-seats {
             display: flex;
+            flex-direction: column;
+            gap: 2rem;
 
-            > div {
-                padding: 1.5rem 2.5rem;
-                width: 1rem;
-                border: 1px solid black;
-                border-radius: 2px;
-                background-color: gray;
-                margin-right: 4rem;
-                cursor: pointer;
+            > .seats {
+                display: flex;
+                gap: 1rem;
+    
+                > div {
+                    padding: 1.5rem 2.5rem;
+                    width: 1rem;
+                    border: 1px solid white;
+                    border-radius: 2px;
+                    background-color: white;
+                    cursor: pointer;
+                }
             }
         }
 
         > .single-seats {
-            margin-top: 5rem;
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+
+            > div {
+                padding: 1.5rem 2.5rem;
+                width: 1rem;
+                border: 1px solid white;
+                border-radius: 2px;
+                background-color: white;
+                cursor: pointer;
+            }
         }
     }
 
@@ -52,9 +72,8 @@
         color: white;
         background-color: rgb(15, 189, 15);
         border: 2px solid rgb(15, 189, 15);
-        padding: 1.3rem 2rem;
-        position: relative;
-        right: -50rem; bottom: 1rem;
+        padding: 1rem 2rem;
         cursor: pointer;
+        margin-top: 2rem;
     }
 }

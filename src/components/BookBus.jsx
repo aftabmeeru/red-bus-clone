@@ -9,7 +9,7 @@ const BookBus = ({ selectedBus }) => {
 
   const booked = useNavigate();
 
-  const [ticket, setTicket] = useState(localStorage.getItem("ticketPrice"));
+  const [ , setTicket] = useState(localStorage.getItem("ticketPrice"));
 
   localStorage.setItem("ticketPrice", selectedBus.ticketPrice);
   localStorage.setItem("source", selectedBus.source);
@@ -17,7 +17,7 @@ const BookBus = ({ selectedBus }) => {
   localStorage.setItem("arrivalTime", selectedBus.arrivalTime);
   localStorage.setItem("departureTime", selectedBus.departureTime);
 
-  const submitDetails = (e) => {
+  const submitDetails = () => {
     if(seats.length !== 0) {
       let cal = seats.length * localStorage.getItem("ticketPrice");
       localStorage.setItem("totalPrice", cal);
@@ -52,42 +52,53 @@ const BookBus = ({ selectedBus }) => {
             <div className="bus-list-container">
               <div className='bus-list-main'>
                 <div className="bus-head">
-                  <h2> { selectedBus.busName } </h2>
+                  <div className="name">
+                    <p>Bus Name</p>
+                    <h2> { selectedBus.busName } </h2>
+                  </div>
                   <div className="departure">
-                    <p>departure</p>
+                    <p>Departure</p>
                     <h2> { selectedBus.departureTime } </h2>
                   </div>
                   <div className="arrival">
-                    <p>arrival</p>
+                    <p>Arrival</p>
                     <h2> { selectedBus.arrivalTime } </h2>
                   </div>
-                  <h2 className='rating'>9 / 10</h2>
-                  <h2> { selectedBus.ticketPrice } /- </h2>
+                  <div className="rating">
+                    <p>Rating</p>
+                    <h2 className='rating'>9 / 10</h2>
+                  </div>
+                  <div className="price">
+                    <p>Price</p>
+                    <h2> { selectedBus.ticketPrice } /- </h2>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="bus-seats">
-              <div className="seats">
-                <div id='double1' onClick={ selectSeat }></div>
-                <div id='double2' onClick={ selectSeat }></div>
-                <div id='double3' onClick={ selectSeat }></div>
-                <div id='double4' onClick={ selectSeat }></div>
-                <div id='double5' onClick={ selectSeat }></div>
-                <div id='double6' onClick={ selectSeat }></div>
-                <div id='double7' onClick={ selectSeat }></div>
-                <div id='double8' onClick={ selectSeat }></div>
+              <div className="double-seats">
+                <div className="seats">
+                    <div id='double1' onClick={ selectSeat }></div>
+                    <div id='double2' onClick={ selectSeat }></div>
+                    <div id='double3' onClick={ selectSeat }></div>
+                    <div id='double4' onClick={ selectSeat }></div>
+                    <div id='double5' onClick={ selectSeat }></div>
+                    <div id='double6' onClick={ selectSeat }></div>
+                    <div id='double7' onClick={ selectSeat }></div>
+                    <div id='double8' onClick={ selectSeat }></div>
+                </div>
+                <div className="seats">
+                  <div id='double9'  onClick={ selectSeat }></div>
+                  <div id='double10' onClick={ selectSeat }></div>
+                  <div id='double11' onClick={ selectSeat }></div>
+                  <div id='double12' onClick={ selectSeat }></div>
+                  <div id='double13' onClick={ selectSeat }></div>
+                  <div id='double14' onClick={ selectSeat }></div>
+                  <div id='double15' onClick={ selectSeat }></div>
+                  <div id='double16' onClick={ selectSeat }></div>
+                </div>
               </div>
-              <div className="seats">
-                <div id='double9'  onClick={ selectSeat }></div>
-                <div id='double10' onClick={ selectSeat }></div>
-                <div id='double11' onClick={ selectSeat }></div>
-                <div id='double12' onClick={ selectSeat }></div>
-                <div id='double13' onClick={ selectSeat }></div>
-                <div id='double14' onClick={ selectSeat }></div>
-                <div id='double15' onClick={ selectSeat }></div>
-                <div id='double16' onClick={ selectSeat }></div>
-              </div>
-              <div className="seats single-seats">
+              <div className="single-seats">
                 <div id='single1' onClick={ selectSeat }></div>
                 <div id='single2' onClick={ selectSeat }></div>
                 <div id='single3' onClick={ selectSeat }></div>

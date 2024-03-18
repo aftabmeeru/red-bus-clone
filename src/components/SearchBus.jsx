@@ -43,7 +43,7 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
         />
         <input type = "date" />
         <button onClick = { handleSubmit }>
-          <NavLink to = { "/buslist" } >SEARCH BUSES</NavLink>
+          <NavLink to = { "/buslist" } >SEARCH</NavLink>
         </button>
       </form>
     </div>

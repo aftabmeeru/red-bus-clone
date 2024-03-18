@@ -1,0 +1,119 @@
+@media only screen and (max-width: 973px) {
+    .bus-list-container {
+        > .bus-list-main {
+            > .bus-list-head {
+                padding: 2rem 1rem;
+            }
+    
+            > .bus-head {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .form-container {
+        padding: 2.5rem;
+        > .form {
+            padding: 2.5rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            > input {
+                width: 100%;
+            }
+            > span > svg{
+                transform: rotate(90deg);
+            }
+            > button {
+                width: 100%;
+            }
+        }
+    }
+
+    .text-container > h1 {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .bus-list-container {
+        padding: 2.5rem 0;
+        > .bus-list-main {
+            > .bus-head {
+                padding: 2rem 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+
+                > div {
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+
+    .seats-container { 
+        > .bus-seats {
+            flex-direction: row;
+            > .double-seats {
+                flex-direction: row;
+
+                > .seats {
+                    flex-direction: column;
+                }
+            }
+            > .single-seats {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .ticket-container {
+        padding: 2.5rem 0;
+        .ticket-details {
+            width: 90%;
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .form-container {
+        padding: 0;
+        > .form {
+            width: 100%;
+        }
+    }
+
+    .text-container > h1 {
+        font-size: 3rem;
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .bus-list-container {
+        > .bus-list-main {
+            padding: 1rem 0;
+            > .bus-head {
+                padding: 2rem 0 0 0;
+                > .name,
+                .departure, 
+                .arrival,
+                .rating,
+                .price {
+                    width: 100%;
+                    border-bottom: 1px solid black;
+                    p {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .seats-container { 
+        > .bus-seats {
+            width: 100%;
+        }
+    }
+}
