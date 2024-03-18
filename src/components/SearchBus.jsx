@@ -2,6 +2,8 @@ import React from 'react';
 import { FaExchangeAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
+import Text from './Text';
+
 const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
   
   function swap() {
@@ -24,29 +26,32 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
   }
 
   return (
-    <div className = 'form-container'>
-      <form className = 'form' onSubmit = { handleSubmit }>
-        <input 
-          type = "text" 
-          placeholder = 'From' 
-          onChange = { handleSourceChange }
-          value={ source }
-        />
-        <span onClick = { () => swap() }>
-          <FaExchangeAlt />
-        </span>
-        <input 
-          type = "text" 
-          placeholder = 'To' 
-          onChange = { handleDestChange }
-          value = { destination }
-        />
-        <input type = "date" />
-        <button onClick = { handleSubmit }>
-          <NavLink to = { "/buslist" } >SEARCH</NavLink>
-        </button>
-      </form>
-    </div>
+    <>
+      <div className = 'form-container'>
+        <form className = 'form' onSubmit = { handleSubmit }>
+          <input 
+            type = "text" 
+            placeholder = 'From' 
+            onChange = { handleSourceChange }
+            value={ source }
+          />
+          <span onClick = { () => swap() }>
+            <FaExchangeAlt />
+          </span>
+          <input 
+            type = "text" 
+            placeholder = 'To' 
+            onChange = { handleDestChange }
+            value = { destination }
+          />
+          <input type = "date" />
+          <button onClick = { handleSubmit }>
+            <NavLink to = { "/buslist" } >SEARCH</NavLink>
+          </button>
+        </form>
+      </div>
+      <Text />
+    </>
   );
 }
 
