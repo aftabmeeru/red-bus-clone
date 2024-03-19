@@ -31,7 +31,7 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
             type = "text" 
             placeholder = 'From' 
             onChange = { handleSourceChange }
-            value={ source }
+            value={ source.toLowerCase() }
           />
           <span onClick = { () => swap() }>
             <FaExchangeAlt />
@@ -40,7 +40,7 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
             type = "text" 
             placeholder = 'To' 
             onChange = { handleDestChange }
-            value = { destination }
+            value = { destination.toLowerCase() }
           />
           <input type = "date" />
           <button onClick = { handleSubmit }>
