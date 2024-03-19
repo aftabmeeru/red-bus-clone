@@ -2,8 +2,6 @@ import React from 'react';
 import { FaExchangeAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-import Text from './Text';
-
 const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
   
   function swap() {
@@ -18,11 +16,11 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
   }
 
   function handleSourceChange(e) {
-    setSource(e.target.value);
+    setSource(e.target.value.toLowerCase());
   }
 
   function handleDestChange(e) {
-    setDestination(e.target.value);
+    setDestination(e.target.value.toLowerCase());
   }
 
   return (
@@ -50,7 +48,6 @@ const SearchBus = ({source, setSource, destination, setDestination, fetch}) => {
           </button>
         </form>
       </div>
-      <Text />
     </>
   );
 }

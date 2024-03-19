@@ -53,8 +53,6 @@ function App() {
 
   useEffect(() => {
     fetchApi()
-    console.log(data)
-    console.log(data2)
   }, []);
 
 

@@ -75,6 +75,7 @@ const BookBus = ({ selectedBus }) => {
                 </div>
               </div>
             </div>
+
             <div className="bus-seats">
               <div className="double-seats">
                 <div className="seats">
